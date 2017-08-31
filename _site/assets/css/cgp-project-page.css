@@ -1,0 +1,812 @@
+
+/****************************/
+/* CGP Project Page         */
+/****************************/
+/* For each, start with typography & colours, then move on to
+   other details. */
+
+/* Horizontal grid: ??px - The same as global line-height */
+/* Vertical grid: 15px */
+
+/* Colours*/
+/* List theme colours here */
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+
+h1, h2 {
+  text-align: center;
+}
+
+td p , td ul , td li {
+  color: #333;
+}
+
+/* Specific Typography
+-------------------------------------------------------------- */
+/* IE fix */
+
+/* HTML Elements
+-------------------------------------------------------------- */
+
+
+/* Site Info
+-------------------------------------------------------------- */
+
+/* Containers & Regions
+-------------------------------------------------------------- */
+
+/* All Containers & Regions
+-------------------------------------------------------------- */
+
+
+/* HEADER Container & Regions
+-------------------------------------------------------------- */
+
+
+/* NAV Container & Regions
+-------------------------------------------------------------- */
+
+/* Jumbotron Container & Regions
+-------------------------------------------------------------- */
+
+/* Bluebox */
+
+#bluebox {
+  position: relative;
+  z-index: 50;
+}
+
+#bluebox .row {
+  display: block;
+}
+
+.cgp-title {
+  text-align: center;
+}
+
+#bluebox h1 {
+  font-size: 36px;
+}
+
+.cgp-img > .cancer-logo {
+  left: calc(50% - 45px);
+  top: 10px;
+  position: absolute;
+  z-index: 4;
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 4px solid #fff;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+@media (max-width: 767px) {
+  #bluebox {
+    padding-top: 40px;
+  }
+
+  .cgp-img > .cancer-logo {
+    top: -10px;
+  }
+}
+
+div.cgp-country {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: -30px;
+}
+
+div.cgp-country p {
+  vertical-align: middle;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  color: #000;
+}
+
+img.flag {
+  border: 1px solid #fff;
+  height: 20px;
+  margin-right: 3px;
+}
+
+/* Main Container & Regions
+-------------------------------------------------------------- */
+
+/* Statistics */
+
+#cgp-statistics {
+  margin-top: 4em;
+  padding-bottom: 4em;
+}
+
+#cgp-statistics .pie-chart , 
+#cgp-statistics .bar-chart {
+  text-align: center;
+  position: relative;
+}
+
+.chart-image {
+  height: 200px;
+}
+
+.chart-image > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#cgp-statistics .pie-chart {
+  border-left: 2px solid #d3d3d3;
+}
+
+#cgp-statistics .bar-chart {
+  border-left: 2px solid #d3d3d3;
+  border-right: 2px solid #d3d3d3;
+}
+
+#cgp-statistics .data {
+  border-right: 2px solid #d3d3d3;
+  padding: 1em 15px;
+}
+
+#cgp-statistics .data > div > span {
+  width: 30%;
+}
+
+#cgp-statistics .data > div > label {
+  width: 70%;
+}
+
+div.no-data::after {
+  display: block;
+  content: "Data Not Available";
+  background-color: #e8edf4;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0;
+  border-radius: 5px;
+  width: calc(100% - 30px);
+  position: absolute;
+  top: calc(100px - 14px);
+  left: 15px;
+}
+
+/* Mobile Version */
+
+@media (max-width: 991px) {
+  #cgp-statistics .pie-chart , 
+  #cgp-statistics .bar-chart {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  #cgp-statistics .pie-chart {
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 2px solid #d3d3d3;
+    margin-bottom: 20px;
+  }
+
+  #cgp-statistics .bar-chart {
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+  }
+
+  #cgp-statistics .data {
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #cgp-statistics .pie-chart , 
+  #cgp-statistics .bar-chart {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  #cgp-statistics .pie-chart {
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    margin-bottom: 20px;
+  }
+
+  #cgp-statistics .bar-chart {
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+  }
+
+  #cgp-statistics .data {
+    border: none;
+  }
+}
+
+/* Content Region
+-------------------------------------------------------------- */
+
+/* CGP Filter */
+
+.cgp-filter {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #d3d3d3;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.cgp-filter.cgp-project {
+  position: relative;
+}
+
+.cgp-filter .row > .btn-filter ,
+.cgp-filter .row > .btn-back ,
+.cgp-filter .row > .btn-back-mobile ,
+.cgp-filter .row > .btn-search ,
+.cgp-filter .row > .btn-filter-mobile  {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: top;
+}
+
+a.btn-back {
+  width: 10%;
+  margin-right: 2%;
+}
+
+.btn-filter {
+  width: 100%;
+  text-align: left;
+}
+
+.cgp-filter div.panel.tumour-type ,
+.cgp-filter div.panel.lead-jurisdiction {
+    width: calc(22% - 2px);
+    margin: 0;
+    margin-right: 2%;
+}
+
+input.form-text.btn-search {
+  width: calc(39% - 4px)
+}
+
+/* Mobile Version */
+
+@media (min-width: 1051px) {
+  .cgp-filter .row > btn.btn-back-mobile ,
+  .cgp-filter .row > btn.btn-filter-mobile ,
+  .cgp-filter .row > .collapsed-filter  {
+    display: none ;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .cgp-filter div.panel.tumour-type ,
+  .cgp-filter div.panel.lead-jurisdiction {
+      margin: 0;
+      margin-right: 2%;
+  }
+
+  .cgp-filter div.panel.tumour-type {
+      width: calc(25% - 2px);
+  }
+
+  .cgp-filter div.panel.lead-jurisdiction {
+      width: calc(28% - 2px);
+  }
+
+  input.form-text.btn-search {
+      width: calc(30% - 4px)
+  }
+}
+
+@media (max-width: 1050px) {
+  a.btn-back {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .cgp-filter.cgp-project a.btn-back , 
+  .cgp-filter.cgp-project #accordion > .panel {
+    display: none !important;
+  }
+
+  .cgp-filter.cgp-project {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .cgp-filter.cgp-project .row > * {
+    margin-right: calc(2.5% - 4px);
+  }
+
+  .cgp-filter.cgp-project .row > .btn-filter-mobile {
+    margin-right: 0 !important;
+  }
+
+  .cgp-filter.cgp-project > .container > .row > div.filter-collapse:not(:last-child) {
+    display: none !important;
+  }
+
+  btn.btn-back-mobile {
+    height: 34px;
+    border: 1px solid #d0d0d0;
+    width: 5%;
+    padding: 6.5px 12px;
+    background-color: #3365a0;
+    color: #fff;
+    background-image: url(../images/back-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+  }
+
+  btn.btn-filter-mobile {
+    width: 10%;
+    padding: 6.5px 12px;
+    background-color: #3365a0;
+    border: 1px solid #d0d0d0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .cgp-filter.cgp-project input.form-text.btn-search {
+    width: 80% !important;
+    padding: 5px 10px 5px 35px;
+  }
+
+  div.filter-collapse.collapsed-filter {
+    position: absolute;
+  }
+
+  .btn-filter {
+    padding-left: 19px; 
+    margin: 0;
+    border-radius: 0;
+  }
+
+  div.collapsed-filter {
+    background-color: #eaeaea;
+  }
+
+  div.collapsed-filter .btn-filter {
+    display: block;
+  }
+
+  div.collapsed-filter .panel.lead-jurisdiction-mobile {
+    margin-top: 10px;
+  }
+
+  .collapsed-filter div.filter-collapse.tumour-type-filter ,
+  .collapsed-filter div.filter-collapse.lead-jurisdiction-filter {
+    position: initial;
+    width: 100%;
+  }
+
+  .collapsed-filter div.filter-collapse.tumour-type-filter:not(:last-child) ,
+  .collapsed-filter div.filter-collapse.lead-jurisdiction-filter:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .collapsed-filter div.filter-collapse.tumour-type-filter > .well ,
+  .collapsed-filter div.filter-collapse.lead-jurisdiction-filter > .well {
+    background-color: #f5f5f5;
+    text-align: left;
+  }
+
+  div.filter-collapse.collapsed-filter > .container > .well {
+    padding: 20px 0;
+  }
+
+  #accordion-mobile > .panel {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .cgp-filter.cgp-project .container {
+    width: 100%;
+  }
+
+  btn.btn-back-mobile {
+    width: 10%;
+  }
+
+  btn.btn-filter-mobile {
+    width: 20%;
+  }
+
+  .cgp-filter.cgp-project input.form-text.btn-search {
+    width: 65% !important;
+  }
+}
+
+/* Postscript bottom container and regions
+-------------------------------------------------------------- */
+/* Postscript bottom: List of recently visited project */
+
+
+/*  FOOTER container and regions
+-------------------------------------------------------------- */
+
+/* Footer region */
+
+/* Menus
+/-------------------------------------------------------------- */
+
+/* Forms
+/-------------------------------------------------------------- */
+
+
+/* Tables
+/-------------------------------------------------------------- */
+
+table.plain {
+  width: 100%;
+  margin-top: 2em;
+}
+
+td.title  h4 {
+  width: 50%;
+  font-size: 12px;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+td.content h3 {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+td.content h4 {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+td.title {
+  width: 20%;
+  vertical-align: top;
+  position: relative;
+}
+
+td.content {
+  width: 80%;
+  vertical-align: top;
+}
+
+div.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+td ul , td ol {
+  padding-left: 20px;
+}
+
+td li {
+  font-size: 14px;
+}
+
+td li a {
+  font-weight: normal;
+}
+
+td.content .image {
+  margin-bottom: 10px;
+}
+
+td.content .image:not(:empty) {
+  height: 50px;
+}
+
+td.content .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+td.content h3.organizations a {
+  font-size: 13px;
+  color: #3365a0;
+  text-transform: none;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+td.content h4.organizations {
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+table.plain td.title img {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  height: 40px;
+}
+
+@media (max-width: 1199px) {
+  table.plain td.title img {
+    right: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  table.plain td.title img {
+    position: relative;
+    top: 0;
+    right: 0
+  }
+
+  td.title  h4 {
+    width: 90%;
+  }
+}
+
+td h4.country {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  margin-top: 7px;
+}
+
+table.org-list {
+  width: 100%;
+}
+
+td.country {
+  width: 12.5%;
+  vertical-align: top;
+}
+
+td.org-list {
+  width: 87.5%;
+}
+
+td.org-list > ul > li {
+  display: inline-block;
+  margin-right: 10px;
+  list-style-type: disc;
+}
+
+td.org-list > ul > li:not(:first-child)::before {
+  content: "\2022";
+  margin: 0 10px 0 0;
+}
+
+.org-list a {
+  font-weight: normal;
+}
+
+table.data-table {
+  width: 100%;
+}
+
+table.data-table td.title {
+  width: 30%;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 600;
+}
+
+table.data-table td.content {
+  width: 70%;
+}
+
+.grid > .col-xs-6 {
+  margin-bottom: 10px; 
+}
+
+@media (max-width: 991px) {
+  .grid > .col-xs-6 {
+    margin-bottom: 40px; 
+  }
+}
+
+/* Pagers
+-------------------------------------------------------------- */
+
+/* Forum
+/-------------------------------------------------------------- */
+
+/* Book
+/-------------------------------------------------------------- */
+
+/* Poll
+/-------------------------------------------------------------- */
+
+/* Nodes
+/-------------------------------------------------------------- */
+
+/* Node: Place node name here*/
+
+/* Views - See view-*.tpl.php
+/-------------------------------------------------------------- */
+
+/* View: Place view name here*/
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+
+/* Breadcrumbs
+/-------------------------------------------------------------- */
+
+/* Tab Menus
+/-------------------------------------------------------------- */
+
+/* Clearfixes
+/-------------------------------------------------------------- */
+/* ADD AS NEEDED*/
+
+
+/* Breakpoint specific styles
+/-------------------------------------------------------------- */
+
+/* Medium Devices, Desktop */
+@media only screen and (max-width: 1365px) { }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 1023px) { }
+
+/* XS Devices, Small tablets */
+@media only screen and (max-width: 767px) { }
+
+/* 2XS Devices, Phones */
+@media only screen and (max-width:479px) { }
+
+/* 3XS Devices, Phones - Optional */
+@media only screen and (max-width:319px) { }
+
+/* Core, Contrib & Custom Module style overrides
+/-------------------------------------------------------------- */
+/* For each, start with typography & colours, then move on to
+   other details. */
+
+/* Bootstrap Component: Labels
+/-------------------------------------------------------------- */
+
+/* Bootstrap component: Buttons
+-------------------------------------------------------------- */
+
+a.btn-main:hover , a.btn-main:hover {
+    text-decoration: none;
+} 
+
+.btn-data h2 {
+    margin: 0;
+    padding-left: 43px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-data.book h2 {
+  color: #3365a0;
+}
+
+.btn-data.dp h2 {
+  color: #ffffff;
+}
+
+div.btn-data {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+div.btn-data.book::after {
+    content:"";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10.5px;
+    height: 20px;
+    padding: 10px;
+    background-image: url("../images/icon-arrow-right-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+div.btn-data.dp::after {
+    content:"";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10.5px;
+    height: 20px;
+    padding: 10px;
+    background-image: url("../images/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+div.btn-data.book {
+    background-color: #fff;
+    background-image: url(../images/icon-book.svg);
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position: 10px center;
+    border: 1px solid #d0d0d0;
+}
+
+div.btn-data.dp {
+    background-color: #3365a0;
+    background-image: url(../images/icon-data-portal.svg);
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position: 10px center;
+    border: 1px solid #224571;
+    border-bottom: 4px solid #224571;
+}
+
+a.btn-data.dp:hover div.btn-data ,
+a.btn-data.dp:active div.btn-data ,
+a.btn-data.dp:focus div.btn-data {
+  background-color: #23527c;
+} 
+
+a.btn-data.book:hover div.btn-data ,
+a.btn-data.book:active div.btn-data ,
+a.btn-data.book:focus div.btn-data {
+  background-color: #f5f5f5;
+} 
+
+a.btn-data {
+  text-decoration: none !important;
+}
+
+/* Bootstrap component: Buttons - Default
+-------------------------------------------------------------- */
+
+
+/* Bootstrap component: Buttons - Primary
+-------------------------------------------------------------- */
+
+/* Bootstrap component: Button groups
+-------------------------------------------------------------- */
+
+/* JQuery UI: Autocomplete
+/-------------------------------------------------------------- */
+
+
+/* React Component Fadein Animation
+-------------------------------------------------------------- */
+
+
+/* Search Autocomplete
+-------------------------------------------------------------- */
+
+/* Additional Changes
+-------------------------------------------------------------- */
+
+
+/* Some Recently Viewed Button Fixes
+-------------------------------------------------------*/
+
+ /* Cancer Type color
+ ---------------------------------------------------*/
+
+/* Addition
+-------------------------------------------------------------- */

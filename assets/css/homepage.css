@@ -1,0 +1,377 @@
+/****************************/
+/* Homepage                 */
+/****************************/
+/* For each, start with typography & colours, then move on to
+   other details. */
+
+/* Horizontal grid: ??px - The same as global line-height */
+/* Vertical grid: 15px */
+
+/* Colours*/
+/* List theme colours here */
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+
+.desc-text > p {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 2em;
+}
+
+/* Specific Typography
+-------------------------------------------------------------- */
+/* IE fix */
+
+/* HTML Elements
+-------------------------------------------------------------- */
+
+/* Site Info
+-------------------------------------------------------------- */
+
+/* Containers & Regions
+-------------------------------------------------------------- */
+
+/* All Containers & Regions
+-------------------------------------------------------------- */
+
+/* HEADER Container & Regions
+-------------------------------------------------------------- */
+
+/* NAV Container & Regions
+-------------------------------------------------------------- */
+
+/* Jumbotron Container & Regions
+-------------------------------------------------------------- */
+
+/* Pie Chart */
+
+.pie-chart {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .pie-chart {
+        display: none;
+    }
+}
+
+.pie-chart img {
+    width: 100%;
+}
+
+/* Portal */
+
+.portal-table td.table-label {
+    width: 70%;
+    text-align: left;
+    border-right: 1px solid #d0d0d0;
+}
+
+.portal-table td.table-amount {
+    width: 30%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.portal-table td.table-amount a{
+    font-weight: bold;
+}
+
+/* Main Container & Regions
+-------------------------------------------------------------- */
+
+div.wfui-card {
+    cursor: pointer;
+}
+
+div.wfui-card .wfui-card-hover {
+    display: none;
+}
+
+div.wfui-card:hover , div.wfui-card:active , div.wfui-card.active {
+    background-color: #E5E5E5;
+}
+
+/* Quickview Modal */
+
+.popover {
+    max-width: none;
+    max-height: none;
+}
+
+#cgp-quickview .modal-dialog{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #666;
+    width: 850px;
+    height: 500px;
+    position: relative;
+    margin: 100px auto;
+}
+
+#cgp-quickview h3.quickview-title , 
+#cgp-quickview .arrow {
+    display: none;
+}
+
+#cgp-quickview  .quickview-content { 
+    padding: 2px;
+    height: 100%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left , 
+#cgp-quickview  .quickview-content > .quickview-right {
+    float: left;
+    padding: 20px;
+    position: relative;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left {
+    display: block;
+    width: 35%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-btn-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-info {
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-info > table {
+    width: 100%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-info > table td {
+    font-size: 14px;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-info > table td.title {
+    width: 45%;
+    font-weight: 600;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left div.quickview-info > table td.content {
+    width: 55%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-left p.quickview-description {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right {
+    display: block;
+    height: 100%;
+    width: 65%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    text-align: center;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-flag-container {
+    width: 100%;
+    text-align: right;
+    height: 20px;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right img.quickview-flag {
+    height: 20px;
+    text-align: right;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-graphs {
+    margin: 30px 0 0;
+    height: calc(100% - 50px);
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.pie-chart ,
+#cgp-quickview  .quickview-content > .quickview-right div.bar-chart {
+    text-align: center;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.pie-chart {
+    width: 40%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.bar-chart {
+    width: 60%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-graphs h4 {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-graphs div.quickview-chart-container {
+    height: 200px;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right div.quickview-graphs div.quickview-chart-container > img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#cgp-quickview  .quickview-content > .quickview-right a.btn-project-data {
+    vertical-align: bottom;
+    background-image: url("../images/icon-data-portal.svg");
+    background-size: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 14px 0;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+button.close-quickview {
+    z-index: 100;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+button.close-quickview img {
+    height: 20px;
+}
+
+/* Content Region
+-------------------------------------------------------------- */
+
+/* Postscript bottom container and regions
+-------------------------------------------------------------- */
+/* Postscript bottom: List of recently visited project */
+
+
+/*  FOOTER container and regions
+-------------------------------------------------------------- */
+
+/* Footer region */
+
+/* Menus
+/-------------------------------------------------------------- */
+
+/* Forms
+/-------------------------------------------------------------- */
+
+/* Tables
+/-------------------------------------------------------------- */
+
+/* Pagers
+-------------------------------------------------------------- */
+
+/* Forum
+/-------------------------------------------------------------- */
+
+/* Book
+/-------------------------------------------------------------- */
+
+/* Poll
+/-------------------------------------------------------------- */
+
+/* Nodes
+/-------------------------------------------------------------- */
+
+/* Node: Place node name here*/
+
+/* Views - See view-*.tpl.php
+/-------------------------------------------------------------- */
+
+/* View: Place view name here*/
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+
+/* Breadcrumbs
+/-------------------------------------------------------------- */
+
+/* Tab Menus
+/-------------------------------------------------------------- */
+
+/* Clearfixes
+/-------------------------------------------------------------- */
+/* ADD AS NEEDED*/
+
+/* Breakpoint specific styles
+/-------------------------------------------------------------- */
+
+/* Medium Devices, Desktop */
+@media only screen and (max-width: 1365px) { }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 1023px) { }
+
+/* XS Devices, Small tablets */
+@media only screen and (max-width: 767px) { }
+
+/* 2XS Devices, Phones */
+@media only screen and (max-width:479px) { }
+
+/* 3XS Devices, Phones - Optional */
+@media only screen and (max-width:319px) { }
+
+/* Core, Contrib & Custom Module style overrides
+/-------------------------------------------------------------- */
+/* For each, start with typography & colours, then move on to
+   other details. */
+
+/* Bootstrap Component: Labels
+/-------------------------------------------------------------- */
+
+
+/* Bootstrap component: Buttons
+-------------------------------------------------------------- */
+
+/* Bootstrap component: Buttons - Default
+-------------------------------------------------------------- */
+
+/* Bootstrap component: Buttons - Primary
+-------------------------------------------------------------- */
+
+/* Bootstrap component: Button groups
+-------------------------------------------------------------- */
+
+/* JQuery UI: Autocomplete
+/-------------------------------------------------------------- */
+
+/* React Component Fadein Animation
+-------------------------------------------------------------- */
+
+/* Search Autocomplete
+-------------------------------------------------------------- */
+
+/* Additional Changes
+-------------------------------------------------------------- */
+
+/* Some Recently Viewed Button Fixes
+-------------------------------------------------------*/
+
+/* Cancer Type color
+---------------------------------------------------*/
+
+/* Addition
+-------------------------------------------------------------- */
